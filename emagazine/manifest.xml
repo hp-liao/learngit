@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://aue.chn.hp.com/schema/eos/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://aue.chn.hp.com/schema/eos/v1 http://eos.dev.hpeos.com/schema/manifest.xsd">
+	<mobilityapp category="user" id="emagazine" version="1.1.0">
+		<name>@{app.name}</name>
+		<description>@{app.description}</description>
+		<vendor>@{app.vendor}</vendor>
+<!---->
+		<imageLazyLoading>true</imageLazyLoading>
+
+		<dependency>
+			<libraries>
+				<library id="framework" />
+				<library id="resourceapi" />
+			</libraries>
+		</dependency>
+		<metadata>
+			<data key="imageLazyLoading" schema="string"><![CDATA[true]]></data>
+			<data key="metro" schema="layout">
+				<attribute name="backgroundImage">app://Dashboard/images/discovery/emagazine.png</attribute>
+				<attribute name="backgroundScale">fill</attribute>
+				<attribute name="description"><![CDATA[喝彩 & 每月经典]]></attribute>
+				<attribute name="title">电子杂志</attribute>
+				<attribute name="roleName">美容顾问</attribute>
+				<attribute name="role">BC</attribute>
+				<attribute name="order">20</attribute>
+			</data>
+		</metadata>
+
+		<lifecycle loadModel="lazy" />
+		<security login="required" roles="BC" />
+		<skins>
+			<skin smallestWidth="320" skin="default" />
+			<skin smallestWidth="480" skin="sw480dp" />
+			<skin smallestWidth="640" skin="sw640dp" />
+			<skin smallestWidth="1080" skin="sw1080dp" />
+			<skin smallestWidth="320" retina="true" os="ios"
+				skin="iphone-xhdpi-sw320dp" />
+		</skins>
+
+		<pages index="index">
+			<page>index.xml</page>
+			<page>ebook.xml</page>
+		</pages>
+	</mobilityapp>
+</manifest>

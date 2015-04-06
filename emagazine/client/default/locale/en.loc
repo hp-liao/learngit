@@ -1,0 +1,10 @@
+# Mobility App
+app.name=emagazine
+app.description=emagazine
+app.vendor=HP
+
+# Actions
+
+# Page Settings
+page.index.label='Index' page
+
