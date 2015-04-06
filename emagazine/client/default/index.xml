@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://aue.chn.hp.com/schema/eos/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://aue.chn.hp.com/schema/eos/v1 http://eos.dev.tetonth.com/schema/manifest.xsd">
+	<page id="index">
+		<metadata>
+			<data key="tap_to_hide_keyboard" schema="string"><![CDATA[false]]></data>
+		</metadata>    	    
+		<layout id="rootLayout" backgroundColor="white">  
+		    <view id="rootView" overflow="hidden"/>
+		</layout>
+	</page>
+</manifest>

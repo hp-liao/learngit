@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://aue.chn.hp.com/schema/eos/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://aue.chn.hp.com/schema/eos/v1 http://eos.dev.hpeos.com/schema/manifest.xsd">
+	<page>
+		<metadata>
+			<data key="tap_to_hide_keyboard" schema="string"><![CDATA[false]]></data>
+		</metadata>
+		<layout qName="gestureView" id="ebookRoot" backgroundColor="black">
+			<ebook id="ebookView" margin="0 0 0 0"/>
+		</layout>
+	</page>
+</manifest>
